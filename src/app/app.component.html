@@ -1,0 +1,11 @@
+<h2>items</h2>
+
+<ol>
+  <ng-container *ngFor="let item of items | async">
+    <li>
+      {{ item.name }}
+    </li>
+  </ng-container>
+</ol>
+
+<button (click)="post()">last 3</button>
