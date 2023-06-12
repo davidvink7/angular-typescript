@@ -1,8 +1,8 @@
 import express from 'express';
-import helmet from "helmet";
-import { itemsRouter } from "./items/items.router";
-import { errorHandler } from "./middleware/error.middleware";
-import { notFoundHandler } from "./middleware/not-found.middleware";
+import helmet from 'helmet';
+import { itemsRouter } from './items/items.router';
+import { errorHandler } from './middleware/error.middleware';
+import { notFoundHandler } from './middleware/not-found.middleware';
 
 const app = express();
 
@@ -20,7 +20,11 @@ app.use((req, res, next) => {
 
 app.use(helmet());
 app.use(express.json());
-app.use("/api/items", itemsRouter);
+app.use('/api/items', itemsRouter);
+
+let ping = (req, res) => res.status(200).send('pong');
+
+app.get('/ping', ping);
 
 app.use(errorHandler);
 app.use(notFoundHandler);

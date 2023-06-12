@@ -4,8 +4,8 @@
  * Data Model Interfaces
  */
 
-import { BaseItem, Item } from "./item.interface";
-import { Items } from "./items.interface";
+import { BaseItem, Item } from './item.interface';
+import { Items } from './items.interface';
 
 
 /**
@@ -15,32 +15,32 @@ import { Items } from "./items.interface";
 let items: Items = {
     1: {
       id: 1,
-      name: "item 1",
-      color: "blue",
+      name: 'item 1',
+      color: 'blue',
       price: 40000,
     },
     2: {
       id: 2,
-      name: "item 2",
-      color: "red",
+      name: 'item 2',
+      color: 'red',
       price: 15000,
     },
     3: {
       id: 3,
-      name: "item 3",
-      color: "black",
+      name: 'item 3',
+      color: 'black',
       price: 2000,
     },
     4: {
       id: 4,
-      name: "item 4",
-      color: "white",
+      name: 'item 4',
+      color: 'white',
       price: 300000,
     },
     5: {
       id: 5,
-      name: "item 5",
-      color: "green",
+      name: 'item 5',
+      color: 'green',
       price: 350000,
     },
   };
